@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css.css">
+    <link rel="icon" href="./assets/imagenes/logo.png">
+    <title>Index</title>
+</head>
+<body>
+    <nav>
+        <a href="./index.html" alt="Logo de la pagina">
+            <img src="./assets/imagenes/Captura de pantalla 2023-04-06 130830.png" alt="">
+        </a>
+            <ul>
+                <li>
+                    <a href="./Historia.html" class="boton-superior">Historia</a>
+                </li>
+                <li>
+                    <a href="./juego.html" class="boton-superior">Juego</a>
+                </li>
+            </ul>
+       
+    </nav>
+    <header>
+        <h1>JUGUEMOS UN POCO</h1>
+    </header>
+
+    <main>
+        <section class="main">
+            <h2 class="content">Armemos el rompecabezas y veamos que imagen es</h2>
+            <div class="juego">
+                <div ondragover="recibir(event)" ondrop="soltarZona(event)" id="contenedor1" class="contenedores">
+                    <p>Arrastre la imagen aqui</p>
+                </div>
+                <div ondragover="recibir(event)" ondrop="soltarZona(event)" id="contenedor2" class="contenedores">
+                    <p>Arrastre la imagen aqui</p>
+                </div>
+                <div ondragover="recibir(event)" ondrop="soltarZona(event)" id="contenedor3" class="contenedores">
+                    <p>Arrastre la imagen aqui</p>
+                </div>
+    
+            </div>
+            <div class=juego2>
+                    <img id="imagen1" ondragstart="arrastrarImagen(event)" src="./assets/imagenes/Rompe1.png" alt="" class="tamaño">
+                    <img id="imagen2" ondragstart="arrastrarImagen(event)" src="./assets/imagenes/rompe2.png" alt="" class="tamaño">
+                    <img id="imagen3" ondragstart="arrastrarImagen(event)" src="./assets/imagenes/Rompe3.png" alt="" class="tamaño">
+            </div>
+        </section>
+         <button onclick="reinicio()" class="botones reinicio">Reiniciar</button>
+        
+    </main>
+    
+
+    <footer>
+        <div class="pie">
+            <img src="./assets/imagenes/logo.png" alt="" class="logo">
+            <p class="textoTarjeta">Programacion e Historia</p>
+            
+        </div>
+        <div class="pie">
+            <p>Sitio con fines educativos - Plagiado por Fabricio Agüero</p>
+        </div>
+    </footer>
+    <script src="./juego.js"> </script>
+</body>
+</html>
